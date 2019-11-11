@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type"
+  content="text/html; charset=utf-8">         
+  <link href="normalize.css" rel="stylesheet" /> 
+  <link href="style.css" rel="stylesheet" />         
+  <title>Runecrafter</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />  
+</head>
+<html>
+  <body>
+    <h1>RuneCrafter</h1>
+    <div id="runeInfo">
+      <form action="#" id="runeCrafter">
+        <h3>1. Select your colours</h2>
+        <br>Colour1: <input type="text" id="colour1" placeholder="purple">
+        Colour2: <input type="text" id="colour2" placeholder="orange"><br>
+        <input type="radio" id="black" name="colour" value="Black" checked="checked">Black      
+        <input type="radio" id="c1" name="colour" value="Set as Colour1" >Set as Colour1
+        <input type="radio" id="c2" name="colour" value="Fade between 1 & 2" >Fade between 1 & 2
+        <input type="radio" id="rainbow" name="colour" value="Set Rainbow" >Set Rainbow<br>
+        <h3>2. Select your letter spread</h2>
+        <br>Letter configuration<br>
+        <input type="radio" id="Common" name="Language" value="Common" checked="checked">Common
+        <input type="radio" id="Gnome" name="Language" value="Gnomish" >Gnomish
+        <input type="radio" id="Dwarf" name="Language" value="Dwarven" >Dwarven
+        <input type="radio" id="Gith" name="Language" value="Gith" >Gith
+        <input type="radio" id="Dragon" name="Language" value="Draconic" >Draconic
+        <input type="radio" id="Elf" name="Language" value="Elven" >Elven<br>
+        <h3>3. enter the word you want a rune/sigil for</h2>
+        <br>Spell name: <input type="text" id="spell"><br>
+        <input type="button" name="submit" value="Make Angled Rune"
+        onclick="genSharp()">
+        <input type="button" name="submit" value="Make Curvy Rune"
+        onclick="genCurvy()">
+        <input type="button" name="submit" value="Make Swirly Rune"
+        onclick="genSwirley()">
+        <input type="button" name="submit" value="Make Wavey Rune"
+        onclick="genWavey()">
+      </form>
+    </div>
+      <p id="log"></p>
+      <p id="log2"></p>
+      <p id="log3"></p>
+
+      <canvas id="myCanvas" width="1000" height="1000" style="border:2px solid";>
+        
+      </table>
+
+  </body>
+
+  <script src="js.js"></script>
+</html>
